@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+}
+
+.lbs-container{
+    background: rgb(101,148,219);
+    background: linear-gradient(225deg, rgba(101,148,219,1) 45%, rgba(72,196,238,1) 100%);
+    width: 100%;
+    flex: 1;
+}
+
+.text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    margin-right: 0.25em;
+    font-size: 5.3vmax;
+    text-align: end;
+    width: 28.5vmax;
+}
+
+#lbs-input{
+    /*background-color: transparent;
+    border: none;*/
+    border-bottom: 2px solid white;
+    color: white;
+    /*margin-right: 0.25em;
+    font-size: 4.5em;
+    text-align: end;
+    width: 4em;*/
+}
+
+#kgs-input{
+    border-bottom: 2px solid #6594db;
+    color: #6594db;
+}
+
+.kgs-container .text{
+    color: #6594db;
+}
+
+.kgs-container{
+    background-color: white;
+    width: 100%;
+    flex: 1;
+}
+
+h1{
+    font-size: 2vmax;
+}
+
+@media only screen and (max-width: 900px) {
+    .container{
+      flex-direction: column;
+    }
+
+    .lbs-container, .kgs-container{
+        height: 50vh;
+    }
+
+
+  }
